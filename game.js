@@ -78,7 +78,7 @@ function finish(){
   if(mistakes.length)saveMistakes(); else localStorage.removeItem("kanken_mistakes_v2");
   $("rank").textContent=correct===deck.length?"PERFECT!! 👑":correct>=8?"S RANK!! 🔥":correct>=6?"CLEAR! ⚔":"RETRY!";
   $("resultScore").textContent=`${correct} / ${deck.length}`;
-  $("resultText").textContent=mistakes.length?`EXP ${score}獲得。${mistakes.length}問がリベンジ待ち！`:`EXP ${score}獲得。全問撃破！`;
+  $("resultText").textContent=mistakes.length?`EXP ${score}獲得。${mistakes.length}問がリベンジ待ち！`:`EXP ${score}獲得。全問撃破！Good job 澪菜`;
   $("revengeResult").classList.toggle("hidden",mistakes.length===0);
   $("revengeResult").onclick=()=>startGame(null,true);
   $("again").onclick=()=>currentType==="revenge"?startGame(null,true):startGame(currentType,false);
