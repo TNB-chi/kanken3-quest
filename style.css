@@ -1,0 +1,15 @@
+
+:root{--bg:#10131a;--panel:#1a2030;--panel2:#232b3d;--text:#f7f8fb;--muted:#aeb8ca;--accent:#ffd54a;--good:#50d890;--bad:#ff6b6b}
+*{box-sizing:border-box} body{margin:0;min-height:100vh;background:linear-gradient(180deg,#0d1017,#171d2a);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;display:flex;justify-content:center}
+.app{width:min(100%,520px);padding:18px 16px 34px} h1{font-size:26px;margin:8px 0 4px}.sub{color:var(--muted);font-size:13px;margin-bottom:16px}
+.card{background:var(--panel);border:1px solid #2e374b;border-radius:20px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.top{display:flex;justify-content:space-between;gap:8px;margin-bottom:12px}.badge{background:var(--panel2);padding:8px 10px;border-radius:12px;font-weight:700;font-size:13px}
+.progress{height:9px;background:#2a3243;border-radius:99px;overflow:hidden;margin:8px 0 20px}.bar{height:100%;width:0;background:var(--accent);transition:.25s}
+.label{color:var(--muted);font-size:13px;text-align:center}.question{font-size:29px;font-weight:800;text-align:center;line-height:1.45;min-height:104px;display:flex;align-items:center;justify-content:center;padding:8px}
+.choices,.stage-grid{display:grid;gap:10px;margin-top:10px}button{width:100%;border:0;border-radius:15px;padding:15px 12px;font-size:17px;font-weight:750;cursor:pointer}
+.choice{background:#f7f8fb;color:#151923}.choice.correct{background:var(--good);color:#08150e}.choice.wrong{background:var(--bad);color:white}
+.stage{background:#f7f8fb;color:#151923;text-align:left}.stage small{display:block;color:#657087;margin-top:4px}
+.action{background:var(--accent);color:#171717;margin-top:12px}.secondary{background:#2a3346;color:white;margin-top:10px}
+.feedback{height:32px;text-align:center;font-weight:800;margin-top:12px}.good{color:var(--good)}.bad{color:var(--bad)}
+.big{font-size:42px;font-weight:900;text-align:center;color:var(--accent);margin:12px 0}.note{color:var(--muted);font-size:13px;line-height:1.7}.center{text-align:center}.hidden{display:none!important}
+.footer{text-align:center;color:#707b90;font-size:11px;margin-top:14px}

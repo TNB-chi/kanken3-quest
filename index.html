@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="index,follow">
+<title>漢検3級 QUEST</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <h1>⚔ 漢検3級 QUEST</h1>
+  <div class="sub">問題データ分離版</div>
+
+  <section id="start" class="card">
+    <h2>ステージ選択</h2>
+    <div id="stageButtons" class="stage-grid"></div>
+    <button id="revengeStart" class="secondary hidden">🔥 苦手問題リベンジ</button>
+    <p id="bestStart" class="note center"></p>
+  </section>
+
+  <section id="game" class="card hidden">
+    <div class="top">
+      <div id="count" class="badge"></div>
+      <div id="combo" class="badge">COMBO 0</div>
+      <div id="score" class="badge">EXP 0</div>
+    </div>
+    <div class="progress"><div id="bar" class="bar"></div></div>
+    <div id="prompt" class="label"></div>
+    <div id="question" class="question"></div>
+    <div id="choices" class="choices"></div>
+    <div id="feedback" class="feedback"></div>
+  </section>
+
+  <section id="result" class="card hidden">
+    <h2 id="rank"></h2>
+    <div id="resultScore" class="big"></div>
+    <p id="resultText" class="note center"></p>
+    <button id="again" class="action">もう一回</button>
+    <button id="revengeResult" class="secondary hidden">🔥 間違いだけリベンジ</button>
+    <button id="home" class="secondary">ステージ選択へ</button>
+  </section>
+
+  <div class="footer">問題を増やすときは questions.js だけ編集</div>
+</main>
+
+<script src="questions.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
