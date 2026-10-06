@@ -22,10 +22,10 @@ type:
 */
 
 const STAGES = {
-  reading: { name:"🌲 読みの森", prompt:"この漢字の読みは？" },
-  antonym: { name:"🕳 対義語の洞窟", prompt:"対義語はどれ？" },
-  synonym: { name:"🏰 類義語の城", prompt:"類義語はどれ？" },
-  yoji:    { name:"🐉 四字熟語の塔", prompt:"正しい答えはどれ？" }
+  reading: { name:"🌲 田辺の森", prompt:"この漢字の読みは？" },
+  antonym: { name:"🕳 田辺の洞窟", prompt:"対義語はどれ？" },
+  synonym: { name:"🏰 田辺の城", prompt:"類義語はどれ？" },
+  yoji:    { name:"🐉 田辺の塔", prompt:"正しい答えはどれ？" }
 };
 
 const QUESTIONS = [
